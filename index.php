@@ -1,7 +1,6 @@
 <?php
 
-$conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
-
+require_once("connect.php");
 
 //tabelka 1
 
