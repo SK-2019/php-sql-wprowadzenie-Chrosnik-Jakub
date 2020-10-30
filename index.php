@@ -44,7 +44,7 @@ $conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
 
 //tabelka 3
 
-    $result=$conn->query('SELECT * FROM pracownicy');
+    $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
 
         echo("<table border=1>");
         echo("<th>id</th>");
@@ -63,7 +63,7 @@ $conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
 
 //tabelka 4
 
-    $result=$conn->query('SELECT * FROM pracownicy');
+    $result=$conn->query('SELECT * FROM pracownicy where dzial = 2');
 
         echo("<table border=1>");
         echo("<th>id</th>");
