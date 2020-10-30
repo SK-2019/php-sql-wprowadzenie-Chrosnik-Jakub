@@ -1,6 +1,6 @@
 <?php
 
-require_once("connect.php");
+require("connect.php");
 
 //tabelka 1
 
