@@ -5,6 +5,8 @@ $conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
 
 //tabelka 1
 
+echo('<h1>Tabelka - wszystkie dane</h1>');
+
     $result=$conn->query('SELECT * FROM pracownicy');
 
         echo("<table border=1>");
@@ -24,7 +26,7 @@ $conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
 
 //tabelka 2
 
-echo('<h1> Tabelka Kobiet </h1>');
+echo('<h1>Tabelka - wszystkie kobiety</h1>');
 
     $result=$conn->query('SELECT * FROM pracownicy where imie like "%a"');
 
@@ -45,6 +47,8 @@ echo('<h1> Tabelka Kobiet </h1>');
 
 //tabelka 3
 
+echo('<h1>Tabelka - wszyscy mężczyźni</h1>');
+
     $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
 
         echo("<table border=1>");
@@ -64,6 +68,8 @@ echo('<h1> Tabelka Kobiet </h1>');
 
 //tabelka 4
 
+echo('<h1>Tabelka - tylk dział 2</h1>');
+
     $result=$conn->query('SELECT * FROM pracownicy where dzial = 2');
 
         echo("<table border=1>");
@@ -82,6 +88,8 @@ echo('<h1> Tabelka Kobiet </h1>');
 
 
 //tabelka 5
+
+echo('<h1>Tabelka - tylko dział 4</h1>');
 
     $result=$conn->query('SELECT * FROM pracownicy where dzial = 4');
 
