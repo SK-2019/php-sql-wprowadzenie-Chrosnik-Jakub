@@ -24,7 +24,9 @@ $conn= new mysqli("mysql-kuba.alwaysdata.net","kuba_ch","moj@b@z@","kuba_ch");
 
 //tabelka 2
 
-    $result=$conn->query('SELECT * FROM pracownicy');
+echo('<h1> Kobiety</h1>')
+
+    $result=$conn->query('SELECT * FROM pracownicy where imie like "%a"');
 
         echo("<table border=1>");
         echo("<th>id</th>");
