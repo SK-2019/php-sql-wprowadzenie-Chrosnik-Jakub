@@ -115,7 +115,6 @@ echo('<h1>Tabelka - tylko dział 4</h1>');
     echo("</table>");
     
 //tabelka 6
-
     $sql = "SELECT sum(zarobki) as suma_zarobki FROM pracownicy, organizacja WHERE (dzial = id_org) and (zarobki>50)";
     echo("<h3>".$sql."</h3>");
     $conn[ = new mysqli("remotemysql.com","F1aJmbwBvG","cmCvZxLITd","F1aJmbwBvG");
