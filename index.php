@@ -115,18 +115,17 @@ echo('<h1>Tabelka - tylko dział 4</h1>');
     echo("</table>");
     
 //tabelka 6
-    $sql = "SELECT sum(zarobki) as suma_zarobki FROM pracownicy";
-    echo("<h3>".$sql."</h3>");
-    $result=$conn->query($sql);
-           echo("<table border=1>");
-        
-           echo("<th>suma_zarobki sfgdfgdfg</th>");
-               while($row=$result->fetch_assoc()) {
-                   echo("<tr>");
-                       echo("<td>".$row["suma_zarobki"]."</td>");
-                   echo("</tr>");
-               }
-           echo("</table>");]
+$result=$conn->query("Select count(imie) as ci, dzial, nazwa_dzial  From pracownicy, organizacja where dzial=id_org group by dzial");
+                echo("<table border=1>");
+                    echo("<th>Count(Imie)</th>");
+                    echo("<th>Dzial</th>");
+                    echo("<th>Nazwa_Dzial</th>");
+                        while($row=$result->fetch_assoc()){
+                            echo("<tr>");
+                            echo("<td>".$row["ci"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>");
+                            echo("</tr>");}
+                echo("</table>");
+        ?>
 ?>
 </body>
 </html>
