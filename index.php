@@ -16,7 +16,7 @@ require_once("connect.php");
 
 echo('<h1>Tabelka - wszystkie dane</h1>');
 
-        $result = $conn->query('SELECT imie, zarobki, data_urodzenia,nazwa_dzial FROM `z-pracownicy`, `z-organizacja` WHERE dzial = id_org');
+        $result = $conn->query('SELECT imie, zarobki, data_urodzenia,nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Zarobki</th>");
