@@ -16,20 +16,18 @@ require_once("connect.php");
 
 echo('<h1>Tabelka - wszystkie dane</h1>');
 
-    $result=$conn->query('SELECT * FROM pracownicy');
-
+        $result = $conn->query('SELECT imie, zarobki, data_urodzenia,nazwa_dzial FROM `z-pracownicy`, `z-organizacja` WHERE dzial = id_org');
         echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>data_urodzenia</th>");
+        echo("<th>nazwa_dzial</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
-    while($row=$result->fetch_assoc()){
-
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-}
+                echo("</tr>");
+            }
     echo("</table>");
 
 
