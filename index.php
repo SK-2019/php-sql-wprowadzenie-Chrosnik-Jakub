@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="nav"> 
-    nawigacja i tu beda linki
+    https://github.com/Chrosnik-Jakub?tab=repositories
     <a href="orgPracownicy.php">Org i Prac</a>
     <a href="agregat.php">Funkcje agregujące</a>
 </div>    
