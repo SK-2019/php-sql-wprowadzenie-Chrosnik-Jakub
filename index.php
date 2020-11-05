@@ -9,6 +9,8 @@
 <body>
 <div class="nav"> 
     nawigacja i tu beda linki
+    <a href="orgPracownicy.php">Org i Prac</a>
+    <a href="agregat.php">Funkcje agregujące</a>
 </div>    
 <?php
 
