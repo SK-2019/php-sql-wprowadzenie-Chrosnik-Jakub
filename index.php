@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+<div class="nav"> 
+    nawigacja i tu beda linki
+</div>    
 <?php
 
 require_once("connect.php");
