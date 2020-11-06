@@ -9,7 +9,9 @@
 <body>
 <div class="nav"> 
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+     | 
     <a href="orgPracownicy.php">Org i Prac</a>
+     | 
     <a href="agregat.php">Funkcje agregujące</a>
 </div>    
 <?php
