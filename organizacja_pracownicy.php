@@ -22,106 +22,80 @@ require_once("connect.php");
 
 //tabelka 1
 
-echo('<h1>Tabelka - wszystkie dane</h1>');
+echo("<h1>Cwiczenie 1</h1>");
+echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org</h2>");
+  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org');
+      echo("<table border=1>");
+      echo("<th>Imie</th>");
+      echo("<th>Zarobki</th>");
+      echo("<th>Data_Urodzenia</th>");
+      echo("<th>Nazwa_Działu</th>");
+          while($row=$result->fetch_assoc()){ 
+              echo("<tr>");
+                  echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
-        $result = $conn->query('SELECT imie, zarobki, data_urodzenia,nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
-        echo("<table border=1>");
-        echo("<th>Imie</th>");
-        echo("<th>Zarobki</th>");
-        echo("<th>data_urodzenia</th>");
-        echo("<th>nazwa_dzial</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+              echo("</tr>");
+          }
 
-                echo("</tr>");
-            }
-    echo("</table>");
-
+      echo("</table>");
 
 //tabelka 2
 
-echo('<h1>Tabelka - wszystkie kobiety</h1>');
+echo("<h1>Cwiczenie 2</h1>");
+echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND dzial = 2</h2>");
+  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND dzial = 2');
+      echo("<table border=1>");
+      echo("<th>Imie</th>");
+      echo("<th>Zarobki</th>");
+      echo("<th>Data_Urodzenia</th>");
+      echo("<th>Nazwa_Działu</th>");
+          while($row=$result->fetch_assoc()){ 
+              echo("<tr>");
+                  echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
-    $result=$conn->query('SELECT * FROM pracownicy where imie like "%a"');
+              echo("</tr>");
+          }
 
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-
-    while($row=$result->fetch_assoc()){
-
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-}
-    echo("</table>");
-
+      echo("</table>");
 
 //tabelka 3
 
-echo('<h1>Tabelka - wszyscy mężczyźni</h1>');
+echo("<h1>Cwiczenie 3</h1>");
+echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie like '%a'</h2>");
+  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie like "%a"');
+      echo("<table border=1>");
+      echo("<th>Imie</th>");
+      echo("<th>Zarobki</th>");
+      echo("<th>Data_Urodzenia</th>");
+      echo("<th>Nazwa_Działu</th>");
+          while($row=$result->fetch_assoc()){ 
+              echo("<tr>");
+                  echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
-    $result=$conn->query('SELECT * FROM pracownicy where imie not like "%a"');
+              echo("</tr>");
+          }
 
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-
-    while($row=$result->fetch_assoc()){
-
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-}
-    echo("</table>");
-
+      echo("</table>");
 
 //tabelka 4
 
-echo('<h1>Tabelka - tylk dział 2</h1>');
+echo("<h1>Cwiczenie 3</h1>");
+echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie not like '%a'</h2>");
+  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie not like "%a"');
+      echo("<table border=1>");
+      echo("<th>Imie</th>");
+      echo("<th>Zarobki</th>");
+      echo("<th>Data_Urodzenia</th>");
+      echo("<th>Nazwa_Działu</th>");
+          while($row=$result->fetch_assoc()){ 
+              echo("<tr>");
+                  echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
-    $result=$conn->query('SELECT * FROM pracownicy where dzial = 2');
+              echo("</tr>");
+          }
 
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
+      echo("</table>");
 
-    while($row=$result->fetch_assoc()){
-
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-}
-    echo("</table>");
-
-
-//tabelka 5
-
-echo('<h1>Tabelka - tylko dział 4</h1>');
-
-    $result=$conn->query('SELECT * FROM pracownicy where dzial = 4');
-
-        echo("<table border=1>");
-        echo("<th>id</th>");
-        echo("<th>imie</th>");
-        echo("<th>dzial</th>");
-        echo("<th>zarobki</th>");
-
-    while($row=$result->fetch_assoc()){
-
-    echo("<tr>");
-    echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
-    echo("</tr>");
-}
-    echo("</table>");
-    
 ?>
 </body>
-</html>
+</html>-
