@@ -79,7 +79,7 @@ echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, org
 
 //tabelka 4
 
-echo("<h1>Cwiczenie 3</h1>");
+echo("<h1>Cwiczenie 4</h1>");
 echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie not like '%a'</h2>");
   $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org AND imie not like "%a"');
       echo("<table border=1>");
