@@ -22,8 +22,8 @@ require_once("connect.php");
 
 //tabelka 1
 
-echo("Tabelka - Pracownicy tylko z działu 2");
-echo("SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2");
+echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
+    
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2');
         echo("<table border=1>");
         echo("<th>Imie</th>");
