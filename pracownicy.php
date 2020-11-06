@@ -22,7 +22,8 @@ require_once("connect.php");
 
 //tabelka 1
 
-  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
+  echo("<h1>Cwiczenie 1</h1>");
+  echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2');
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -40,8 +41,8 @@ require_once("connect.php");
     
 //tabelka 2
     
-  echo("</table>");
-  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)</h2>");  
+    echo("<h1>Cwiczenie 2</h1>");
+    echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)</h2>");  
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)'); 
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -59,8 +60,8 @@ require_once("connect.php");
  
 //tabelka 3 
     
-  echo("</table>");
-  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30</h2>");  
+    echo("<h1>Cwiczenie 3</h1>");
+    echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30</h2>");  
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30'); 
         echo("<table border=1>");
         echo("<th>Imie</th>");
