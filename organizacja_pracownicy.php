@@ -12,7 +12,7 @@
      | 
     <a href="pracownicy.php">Pracownicy</a>
      | 
-    <a href="orgPracownicy.php">Organizacja i Pracownicy</a>
+    <a href="organizacja_pracownicy.php">Organizacja i Pracownicy</a>
      | 
     <a href="agregat.php">Funkcje agregujące</a>
 </div> 
