@@ -22,7 +22,6 @@ require_once("connect.php");
 
 //tabelka 1
 
-  echo("</table>");
   echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2');
         echo("<table border=1>");
