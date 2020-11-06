@@ -22,8 +22,8 @@ require_once("connect.php");
 
 //tabelka 1
 
-echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
-    
+  echo("</table>");
+  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2');
         echo("<table border=1>");
         echo("<th>Imie</th>");
@@ -41,10 +41,28 @@ echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM praco
     
 //tabelka 2
     
-        echo("</table>");
-    require("connect.php");
-    echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)</h2>");  
+  echo("</table>");
+  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)</h2>");  
     $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)'); 
+        echo("<table border=1>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+ 
+//tabelka 3 
+    
+  echo("</table>");
+  echo("<h2>Tabelka - SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30</h2>");  
+    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30'); 
         echo("<table border=1>");
         echo("<th>Imie</th>");
         echo("<th>Zarobki</th>");
