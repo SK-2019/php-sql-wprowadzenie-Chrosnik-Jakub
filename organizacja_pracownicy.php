@@ -8,10 +8,14 @@
 </head>
 <body>
 <div class="nav"> 
-    <a href="https://github.com/Chrosnik-Jakub?tab=repositories">GITHUB</a>
-    <a href="orgPracownicy.php">Org i Prac</a>
+    <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
+     | 
+    <a href="pracownicy.php">Pracownicy</a>
+     | 
+    <a href="orgPracownicy.php">Organizacja i Pracownicy</a>
+     | 
     <a href="agregat.php">Funkcje agregujące</a>
-</div>    
+</div> 
 <?php
 
 require_once("connect.php");
