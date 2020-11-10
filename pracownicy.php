@@ -15,7 +15,9 @@
     <a href="organizacja_pracownicy.php">Organizacja i Pracownicy</a>
      | 
     <a href="agregat.php">Funkcje agregujące</a>
-</div>  
+     | 
+    <a href="data i czas.php">Data i Czas</a>
+</div> 
 <?php
 
 require_once("connect.php");
