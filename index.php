@@ -16,7 +16,7 @@
      | 
     <a href="agregat.php">Funkcje agregujące</a>
      | 
-    <a href="dataiczas.php">Data i Czas</a>
+    <a href="data i czas.php">Data i Czas</a>
 </div> 
 <?php
 
