@@ -19,7 +19,7 @@
     <a href="data i czas.php">Data i Czas</a>
 </div> 
 <?php
-<h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
+echo("<h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>");
 
                 require_once("connect.php");
                 $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org");
@@ -37,7 +37,7 @@
                             echo("</tr>");}
                 echo("</table>");
 
-<h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>
+echo("<h2>Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja</h2>");
 
                 require_once("connect.php");
                 $result=$conn->query("Select *, year(curdate())-year(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org and nazwa_dzial='serwis'");
