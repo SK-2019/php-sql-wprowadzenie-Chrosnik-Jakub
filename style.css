@@ -10,3 +10,8 @@ body {
 nav {
     background-color: lightblue;
 }
+
+nav a {
+    color: green;
+    padding: 1rem;
+}
