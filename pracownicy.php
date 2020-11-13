@@ -20,64 +20,63 @@
 </div> 
 <?php
 
-require_once("connect.php");
-
-//tabelka 1
-
-  echo("<h1>Cwiczenie 1</h1>");
-  echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2</h2>");
-    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and dzial = 2');
+    require("connect.php");
+    $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=2 AND dzial=id_org';
+    echo("<h1>Ćw 1</h1>");
+    echo("<h2>$sql</h2>");
+    $result = $conn->query($sql);
         echo("<table border=1>");
+        echo("<th>ID</th>");
         echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                 echo("</tr>");
             }
 
         echo("</table>");
-    
-//tabelka 2
-    
-    echo("<h1>Cwiczenie 2</h1>");
-    echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)</h2>");  
-    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and (dzial=2 or dzial=3)'); 
+    require("connect.php");
+    $sql='SELECT * FROM pracownicy, organizacja where dzial=id_org AND (dzial=1 or dzial=2)';
+    echo("<h1>Ćw 2</h1>");
+    echo("<h2>$sql</h2>"); 
+    $result = $conn->query($sql); 
         echo("<table border=1>");
+        echo("<th>ID</th>");
         echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                echo("</tr>");
+            }
+    
 
+        echo("</table>");
+    require("connect.php");
+    $sql='SELECT * FROM pracownicy, organizacja WHERE zarobki<30 AND dzial=id_org';
+    echo("<h1>Ćw 3</h1>");
+    echo("<h2>$sql</h2>");
+    $result = $conn->query($sql); 
+        echo("<table border=1>");
+        echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
                 echo("</tr>");
             }
 
-        echo("</table>");
- 
-//tabelka 3 
-    
-    echo("<h1>Cwiczenie 3</h1>");
-    echo("<h2>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30</h2>");  
-    $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org and zarobki<30'); 
-        echo("<table border=1>");
-        echo("<th>Imie</th>");
-        echo("<th>Zarobki</th>");
-        echo("<th>Data_Urodzenia</th>");
-        echo("<th>Nazwa_Działu</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+            echo("</table>")
 
-                echo("</tr>");
-            }
-
-        echo("</table>");
 ?>
+    
 </body>
 </html>
