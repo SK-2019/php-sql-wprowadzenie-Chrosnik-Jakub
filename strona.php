@@ -1,6 +1,6 @@
 <?php
 
-echo ("<h2>stronana.php</h2>");
+echo ("strona.php");
   echo ("</br>");
 
 echo ($_POST['id']);
