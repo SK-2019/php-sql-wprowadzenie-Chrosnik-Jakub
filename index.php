@@ -19,6 +19,8 @@
     <a href="data i czas.php">Data i Czas</a>
 </div> 
 
+<br>
+
     <form action="strona.php" method="POST">
         <input type="text" name="name">
         <input type="submit" value="Szukaj">
