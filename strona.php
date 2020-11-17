@@ -20,8 +20,10 @@
 </div>
 
 <?php
-
+    
+  echo ("</br>");
 echo ("strona.php");
+  echo ("</br>");
   echo ("</br>");
 
 echo ($_POST['id']);
