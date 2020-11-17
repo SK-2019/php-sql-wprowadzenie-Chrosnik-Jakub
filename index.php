@@ -22,7 +22,11 @@
 <br>
 
     <form action="strona.php" method="POST">
-        <input type="text" name="name">
+        <input type="text" name="id"></br>
+        <input type="text" name="imie"></br>
+        <input type="text" name="dzial"></br>
+        <input type="text" name="zarobki"></br>
+        <input type="text" name="Data_urodzenia"></br>
         <input type="submit" value="Szukaj">
     </form>
 
