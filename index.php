@@ -21,7 +21,7 @@
 
     <form action="strona.php" method="POST">
         <input type="text" name="name">
-        <input type="submit" value="wyślij w świat">
+        <input type="submit" value="Szukaj">
     </form>
 
 </body>
