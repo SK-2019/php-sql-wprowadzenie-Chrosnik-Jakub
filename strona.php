@@ -27,13 +27,10 @@
     
   echo ("</br>");
 
-echo ($_POST['firstname']);
+echo ($_POST['imie']);
   echo ("</br>");
     
-echo ($_POST['id']);
-  echo ("</br>");
-
-echo ($_POST['imie']);
+echo ($_POST['nazwisko']);
   echo ("</br>");
 
 echo ($_POST['dzial']);
@@ -42,7 +39,8 @@ echo ($_POST['dzial']);
 echo ($_POST['zarobki']);
   echo ("</br>");
 
-echo ($_POST['Data_urodzenia']);
+echo ($_POST['dataur']);
+  echo ("</br>");
 
 ?>
 </body>
