@@ -26,10 +26,11 @@
 <br>
 
 <form action="strona.php" method="POST">
-	<input type="text" name="firstname" placeholder="Imie"></br>
-	<input type="number" name="lastname" placeholder="Dzial"></br>
-	<input type="number" name="city" placeholder="Zarobki"></br>
-	<input type="date" name="phone" placeholder="Data urodzenia"></br>
+	<input type="text" name="imie" placeholder="Imie"></br>
+	<input type="text" name="nazwisko" placeholder="Nazwisko"></br>
+	<input type="number" name="dzial" placeholder="Dzial"></br>
+	<input type="number" name="zarobki" placeholder="Zarobki"></br>
+	<input type="date" name="dataur" placeholder="Data urodzenia"></br>
 	<input type="submit" value="wyślij do strona.php">
 </form>
 
