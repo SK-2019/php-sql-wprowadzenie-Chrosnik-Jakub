@@ -2,21 +2,12 @@
 echo("jestes w insert.php");
 echo $_POST['name'];
 
-$conn = new mysqli('mysql-kuba.alwaysdata.net','kuba_ch','moj@b@z@','kuba_ch');
-if ($conn->connect_error) {
-    die("connection failed: ".mysqli_connect_error());
-}
+require("connect.php");
 
 $sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) 
-       VALUES (null,".$_POST['name'].", 1, 76,'1991-11-21')";
+       VALUES (NULL,".$_POST['imie'].", ".$_POST['dzial'], ".$_POST['zarobki'], ".$_POST['data_urodzenia'])";
 
 echo "<li>".$sql;
-
-if ($conn->query($sql) === TRUE) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
 
 $conn->close();
 ?>
