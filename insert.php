@@ -1,16 +1,16 @@
 <?php
 
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$servername = "mysql-kuba.alwaysdata.net";
+$username = "kuba_ch";
+$password = "moj@b@z@";
+$dbname = "kuba_ch";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki) 
+$sql = "INSERT INTO pracownicy (id_pracownicy, imie, dzial, zarobki) 
        VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
 
 //zapisanie do bazy danych
