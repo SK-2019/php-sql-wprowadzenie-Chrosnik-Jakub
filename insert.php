@@ -7,7 +7,7 @@ if ($conn->connect_error) {
     die("connection failed: ".mysqli_connect_error());
 }
 
-$sql = "INSERT INTO Pracownik (null,imie, dzial, zarobki) 
+$sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) 
        VALUES (null,".$_POST['name'].", 1, 76,'1991-11-21')";
 
 echo "<li>".$sql;
