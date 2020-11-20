@@ -26,20 +26,20 @@
 <?php
     
   echo ("</br>");
-
-echo ($_POST['imie']);
+    
+echo("<li> imie: ".$_POST['imie']);
   echo ("</br>");
     
-echo ($_POST['nazwisko']);
+echo("<li> imie: ".$_POST['nazwisko']);
   echo ("</br>");
 
-echo ($_POST['dzial']);
+echo("<li> imie: ".$_POST['dzial']);
   echo ("</br>");
 
-echo ($_POST['zarobki']);
+echo("<li> imie: ".$_POST['zarobki']);
   echo ("</br>");
 
-echo ($_POST['dataur']);
+echo("<li> imie: ".$_POST['dataur']);
   echo ("</br>");
 
 ?>
