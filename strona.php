@@ -27,19 +27,19 @@
     
   echo ("</br>");
     
-echo("<li> imie: ".$_POST['imie']);
+echo("<li> Imie: ".$_POST['imie']);
   echo ("</br>");
     
-echo("<li> imie: ".$_POST['nazwisko']);
+echo("<li> Nazwisko: ".$_POST['nazwisko']);
   echo ("</br>");
 
-echo("<li> imie: ".$_POST['dzial']);
+echo("<li> Dzial: ".$_POST['dzial']);
   echo ("</br>");
 
-echo("<li> imie: ".$_POST['zarobki']);
+echo("<li> Zarobki: ".$_POST['zarobki']);
   echo ("</br>");
 
-echo("<li> imie: ".$_POST['dataur']);
+echo("<li> Data urodzenia: ".$_POST['dataur']);
   echo ("</br>");
 
 ?>
