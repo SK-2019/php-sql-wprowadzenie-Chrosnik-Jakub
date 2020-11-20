@@ -27,6 +27,10 @@
     
   echo ("</br>");
     
+ echo("<li> Tekst: ".$_POST['text']);
+  echo ("</br>");
+  echo ("</br>");
+    
 echo("<li> Imie: ".$_POST['imie']);
   echo ("</br>");
     
