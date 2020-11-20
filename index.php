@@ -25,14 +25,14 @@
 
 <br>
 
-    <form action="strona.php" method="POST">
-        <input type="text" name="id"></br>
-        <input type="text" name="imie"></br>
-        <input type="text" name="dzial"></br>
-        <input type="text" name="zarobki"></br>
-        <input type="text" name="Data_urodzenia"></br>
-        <input type="submit" value="Szukaj">
-    </form>
+<form action="strona.php" method="POST">
+	<input type="text" name="firstname" placeholder="Imie"></br>
+	<input type="text" name="lastname" placeholder="Nazwisko"></br>
+	<input type="text" name="city" placeholder="Miasto"></br>
+	<input type="text" name="phone" placeholder="Numer tel"></br>
+	<input type="text" name="poscode" placeholder="Kod pocztowy"></br>
+	<input type="submit" value="wyślij do strona.php">
+</form>
 
 </body>
 </html>
