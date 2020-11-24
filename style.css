@@ -1,9 +1,9 @@
 body {
-    background-color: pink;
+    background-color: rgb(128, 128, 128);
   }
   
   h1 {
-    color: blue;
+    color: rgb(255, 0, 0);
     margin-left: 20px;
   }
 
