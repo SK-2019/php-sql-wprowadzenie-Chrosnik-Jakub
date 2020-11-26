@@ -21,6 +21,8 @@
     <a href="data i czas.php">Data i Czas</a>
      | 
     <a href="formularz.html">Formularz</a>
+     | 
+    <a href="daneDoBazy.html">Dane do bazy</a>
 </div>
 <?php
 
