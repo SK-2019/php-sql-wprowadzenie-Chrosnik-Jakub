@@ -21,7 +21,9 @@
     <a href="data i czas.php">Data i Czas</a>
      | 
     <a href="formularz.html">Formularz</a>
-</div>
+     | 
+    <a href="daneDoBazy.html">Dane do bazy</a>
+</div> 
 <?php
 
     require("connect.php");
