@@ -21,10 +21,13 @@
     <a href="data i czas.php">Data i Czas</a>
      | 
     <a href="formularz.html">Formularz</a>
+     | 
+    <a href="daneDoBazy.html">Dane do bazy</a>
 </div> 
 </body>
 
 <body>
+<h2>Dodawanie Pracownika</h2>
 <form action="insert.php" method="POST">
 	<input type="text" name="name" placeholder="Imie"></br>
 	<input type="number" name="dzial" placeholder="Dział"></br>
@@ -32,5 +35,14 @@
 	<input type="date" name="data_urodzenia" placeholder="Data urodzenia"></br>
 	<input type="submit" value="wyślij do insert.php">
 </form>
-</body>	
+
+<h2>Usuwanie pracownika</h2>
+<form action="delete.php" method="POST">
+   <input type="number" name="id"></br>
+   <input type="submit" value="Usuń pracownika">
+</form>
+
+</body>
+
+	
 </html>
