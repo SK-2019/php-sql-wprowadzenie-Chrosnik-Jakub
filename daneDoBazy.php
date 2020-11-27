@@ -53,6 +53,7 @@ $result=$conn->query($sql);
     echo("<th>zarobki</th>");
     echo("<th>data_urodzenia</th>");
     echo("<th>nazwa_dzial</th>");
+    echo("<th>usuwanie</th>");
 
     while($row=$result->fetch_assoc()) {
             echo("<tr>");
