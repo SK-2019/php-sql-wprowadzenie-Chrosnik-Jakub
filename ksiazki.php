@@ -72,7 +72,7 @@ $sql="Select * FROM biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id
             
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytuł"]."</td>");
+                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
                echo("</tr>");
             }
           echo("</table>");
