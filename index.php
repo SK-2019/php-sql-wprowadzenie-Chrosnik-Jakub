@@ -23,6 +23,8 @@
     <a href="formularz.html">Formularz</a>
      | 
     <a href="daneDoBazy.php">Dane do bazy</a>
+     |
+    <a href="ksiazki.php">Ksiazkiy</a>
 </div> 
 </body>
 </html>
