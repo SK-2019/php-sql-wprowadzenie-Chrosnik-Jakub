@@ -24,7 +24,7 @@
      | 
     <a href="daneDoBazy.php">Dane do bazy</a>
      |
-    <a href="ksiazki.php">Ksiazkiy</a>
+    <a href="ksiazki.php">Ksiazki</a>
 </div> 
 </body>
 </html>
