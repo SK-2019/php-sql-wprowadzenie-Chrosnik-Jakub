@@ -64,6 +64,8 @@ $result=$conn->query($sql);
 
 
 $sql="Select * FROM biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor.id AND biblTytul_id=biblTytul.id";
+echo("<h2>".$sql."</h2>");
+    
  $result=$conn->query($sql);
          echo("<table border=1>");
             echo("<th>ID</th>");
