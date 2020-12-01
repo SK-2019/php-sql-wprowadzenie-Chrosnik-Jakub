@@ -63,7 +63,7 @@ $result=$conn->query($sql);
         echo("</table>");
 
 
-$sql="Select * From biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id";
+$sql="Select * From biblAutor, biblTytul, biblAutor_biblTytul where biblAutor_id=biblAutor_id and biblTytul_id=biblTytul_id";
  $result=$conn->query($sql);
          echo("<table border=1>");
             echo("<th>ID</th>");
