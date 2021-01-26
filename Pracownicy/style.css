@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(128, 128, 128);
+  }
+  
+  h1 {
+    color: rgb(255, 0, 0);
+    margin-left: 20px;
+  }
+
+nav {
+    background-color: lightblue;
+}
+
+nav a {
+    color: green;
+    padding: 1rem;
+}
