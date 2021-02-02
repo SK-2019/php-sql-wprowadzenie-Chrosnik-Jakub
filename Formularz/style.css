@@ -46,4 +46,5 @@ nav a {
   overflow: hidden;
   display: flex;
   align-items: column;
-  flex-direction: column
+  flex-direction: column;
+}
