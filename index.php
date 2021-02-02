@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="nav"> 
+<div class="container">
+    <div class="item colorRed">
+
+    <h1 class="title">
+    Chrośnik Jakub
+    </h1>
+</div>
+
+<div class="colorBlue">
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
      | 
     <a href="/index.php">Index</a>
