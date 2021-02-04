@@ -16,7 +16,7 @@ nav a {
     padding: 1rem;
 }
 .container {
-  background-color: lightgray;
+  background-color: rgb(146, 146, 146);
   display: flex;
   flex-wrap: wrap;
  
@@ -30,7 +30,7 @@ nav a {
 }
 
 .colorRed {
-  background-color: darkgray;
+  background-color: rgb(228, 228, 228);
   width: 100%;
   height: auto;
   display: flex;
@@ -39,7 +39,7 @@ nav a {
 }
 
 .colorBlue {
-  background-color: gainsboro;
+  background-color: rgb(75, 75, 75);
   width: auto;
   max-width: 20%;
   height: 100vh;
