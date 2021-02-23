@@ -13,8 +13,9 @@
     <h1 class="title">
     Chrośnik Jakub
     </h1>
-</div>
 echo("$conn = new mysqli($_SERVER['S'],$_SERVER['U'], $_SERVER['P'], $_SERVER['B']");
+</div>
+
 <div class="colorBlue">
     <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
 
