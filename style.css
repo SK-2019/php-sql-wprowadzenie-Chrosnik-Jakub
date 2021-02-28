@@ -39,15 +39,12 @@ nav a {
 }
 
 .colorBlue {
-  background-color: gainsboro;
-  width: auto;
-  max-width: 20%;
-  height: 100vh;
-  overflow: hidden;
+  width: 20%;
+  flex-direction: column;
   display: flex;
-  align-items: column;
 
 }
+
 .link {
   width: 90%;
   height: 25%;
