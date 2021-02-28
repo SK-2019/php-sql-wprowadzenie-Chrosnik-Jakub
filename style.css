@@ -62,12 +62,12 @@ th {
 th, td {
   padding: 15px;
   text-align: left;
-  border: 1px solid black;
+  border: 1px solid rgb(128, 15, 15);
 }
 
-tr:nth-child(even) {background-color: #b3b3b3;}
+tr:nth-child(even) {background-color: #242424;}
 
 tr {
-  background-color: rgb(133, 133, 133);
-  color: rgb(145, 0, 0);
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 255, 255);
   }
