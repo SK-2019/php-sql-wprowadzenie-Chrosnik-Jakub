@@ -11,7 +11,7 @@
     <div class="item colorRed">
 
     <h1 class="title">
-Kuba Chrosnik
+    🌹 Kuba Chrosnik 🌹
     </h1>
     </div>
 <div class="colorBlue">
