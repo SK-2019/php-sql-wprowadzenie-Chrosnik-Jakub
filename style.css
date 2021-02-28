@@ -66,7 +66,7 @@ input {
 }
 
 .link:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.7);
 }
 
 table {
@@ -75,7 +75,7 @@ table {
 }
 
 th {
-  background-color: rgb(0, 0, 0, 0.5);
+  background-color: rgb(0, 0, 0, 0.7);
   color: white;
 }
 
@@ -87,14 +87,14 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(36, 36, 36, 0.5);
+  background-color: rgb(36, 36, 36, 0.7);
 }
 
 tr {
-  background-color: rgb(26, 26, 26, 0.5);
+  background-color: rgb(26, 26, 26, 0.7);
   color: rgb(255, 255, 255);
 }
 
 tr:hover {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 0.7);
 }
