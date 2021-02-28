@@ -29,6 +29,7 @@
 <a class="link" href="/Biblioteka/ksiazki.php">Ksiazki</a>
 </div> 
 </body>
+<div class="colorGreen">
 <body>
 <h2>Dodawanie Pracownika</h2>
 <form action="insert.php" method="POST">
@@ -44,8 +45,7 @@
    <input type="number" name="id"></br>
    <input type="submit" value="Usuń pracownika">
 </form>
-</body>
-<div class="colorGreen"> 
+</body> 
 <?php
 
 require_once("../connect.php");
