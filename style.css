@@ -54,6 +54,11 @@ table {
   border-collapse: collapse;
 }
 
+th {
+  background-color: #000000;
+  color: white;
+}
+
 th, td {
   padding: 15px;
   text-align: left;
