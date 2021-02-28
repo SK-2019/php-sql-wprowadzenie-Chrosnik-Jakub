@@ -8,9 +8,7 @@
 </head>
 <div class="container">
 <div class="colorRed">
-<h1 class="title">
-    Kuba Chrosnik
-    </h1>
+<h1 class="title">🌹 Kuba Chrośnik 🌹</h1>
 </div>
 <div class="colorBlue"> 
 <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
