@@ -48,6 +48,7 @@ echo "<li>". $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo ("New record created successfully");
+  header('Location: daneDoBazy.php');
 } else {
 //informacja o ewentualnych błędach
   echo "Error: " . $sql . "<br>" . $conn->error;
