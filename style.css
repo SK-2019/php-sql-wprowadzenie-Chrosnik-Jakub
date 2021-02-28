@@ -4,12 +4,17 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  }
+}
   
-  h1 {
+h1 {
     color: rgb(255, 255, 255);
     margin-left: 20px;
   }
+
+h2 {
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+}
 
 .container {
   display: flex;
@@ -52,6 +57,7 @@ border-radius: 7px;
 
 table {
   border-collapse: collapse;
+  margin-left: 20px;
 }
 
 th {
