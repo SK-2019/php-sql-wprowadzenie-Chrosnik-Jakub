@@ -13,7 +13,6 @@
     <h1 class="title">
     Chrośnik Jakub
     </h1>
-</div>
 
 <div class="colorBlue">
     <a class="link" href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
@@ -33,6 +32,7 @@
     <a class="link" href="/Formularz/daneDoBazy.php">Dane do bazy</a>
 
     <a class="link" href="/Biblioteka/ksiazki.php">Ksiazki</a>
-</div> 
+</div>
+</div>
 </body>
 </html>

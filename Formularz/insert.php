@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<div class="nav"> 
+<div class="container">
+<div class="colorRed">
+</div>
+<div class="colorBlue"> 
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
      | 
     <a href="index.php">Index</a>
@@ -53,4 +55,6 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 ?>
+</div>
+</div>
 </html>

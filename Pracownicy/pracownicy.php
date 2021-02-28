@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body>
-<div class="nav"> 
+<div class="container">
+<div class="colorRed">
+</div>
+<div class="colorBlue"> 
     <a href="https://github.com/SK-2019/php-sql-wprowadzenie-Chrosnik-Jakub">GITHUB</a>
      | 
     <a href="/index.php">Index</a>
@@ -25,13 +27,9 @@
     <a href="/Formularz/daneDoBazy.php">Dane do bazy</a>
      |
     <a href="/Biblioteka/ksiazki.php">Ksiazki</a>
-</div> 
+</div>
+<div class="colorGreen"> 
 <?php
-echo("<li>".$_SERVER['USER']);
-echo("<li>".$_SERVER['PASS']);
-echo("<li>".$_SERVER['SERV']);
-echo("<li>".$_SERVER['DB']);
-
     require_once("../connect.php");
     $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=2 AND dzial=id_org';
     echo("<h1>Ćw 1</h1>");
@@ -87,6 +85,6 @@ echo("<li>".$_SERVER['DB']);
             echo("</table>")
 
 ?>
-    
-</body>
+</div>
+</div>
 </html>
