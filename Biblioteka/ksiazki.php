@@ -29,6 +29,7 @@
     <a href="/Biblioteka/ksiazki.php">Ksiazki</a>
 </div> 
 </body>
+<div class="colorGreen"> 
 <?php
 
 require_once("../connect.php");

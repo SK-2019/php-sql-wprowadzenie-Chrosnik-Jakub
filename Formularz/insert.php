@@ -29,7 +29,7 @@
     <a href="/Biblioteka/ksiazki.php">Ksiazki</a>
 </div> 
 </body>
-
+<div class="colorGreen"> 
 <?php
 
 echo("jestes w insert.php");

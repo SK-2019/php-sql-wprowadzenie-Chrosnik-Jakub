@@ -27,7 +27,8 @@
     <a href="/Formularz/daneDoBazy.php">Dane do bazy</a>
      |
     <a href="/Biblioteka/ksiazki.php">Ksiazki</a>
-</div> 
+</div>
+<div class="colorGreen"> 
 <?php
 
 require_once("../connect.php");

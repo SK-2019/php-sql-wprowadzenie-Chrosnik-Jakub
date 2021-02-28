@@ -45,6 +45,7 @@
    <input type="submit" value="Usuń pracownika">
 </form>
 </body>
+<div class="colorGreen"> 
 <?php
 
 require_once("../connect.php");
