@@ -19,7 +19,7 @@ input {
   margin-left: 20px;
   margin-bottom: 20px;
   margin-right: 20px;
-  border-color: rgb(27, 27, 27);
+  border-color: rgb(26, 26, 26);
   padding: 15px;
   background-color: rgb(26, 26, 26);
   color: rgb(255, 255, 255);
@@ -85,3 +85,7 @@ tr {
   background-color: rgb(26, 26, 26);
   color: rgb(255, 255, 255);
   }
+
+  tr:nth-child(even) {
+    background-color: #000000;
+}
