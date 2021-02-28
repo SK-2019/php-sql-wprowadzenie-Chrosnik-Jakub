@@ -36,7 +36,6 @@
 
 require_once("../connect.php");
     $sql='SELECT sum(zarobki) as sz FROM pracownicy';
-    echo("<h1>Ćw 1</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -52,7 +51,6 @@ require_once("../connect.php");
         echo("</table>");
 
         $sql='SELECT sum(zarobki) as sz FROM pracownicy WHERE imie like "%a"';
-        echo("<h1>Ćw 2</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -68,7 +66,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT sum(zarobki) as sz FROM pracownicy WHERE (imie not like "a%") AND (dzial=2 OR dzial=3)';
-        echo("<h1>Ćw 3</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -84,7 +81,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT avg(zarobki) as az FROM pracownicy where imie not like "%a"';
-       echo("<h1>Ćw 4</h1>");
        echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -100,7 +96,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT avg(zarobki) as az FROM pracownicy WHERE dzial=4';
-        echo("<h1>Ćw 5</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -116,7 +111,6 @@ require_once("../connect.php");
             echo("</table>");
 
             $sql='SELECT avg(zarobki) as az FROM pracownicy WHERE (imie not like "%a") AND (dzial=1 OR dzial=2)';
-            echo("<h1>Ćw 6</h1>");
             echo("<h2>$sql</h2>");
             $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -130,7 +124,6 @@ require_once("../connect.php");
                 echo("</table>");
 
                 $sql='SELECT count(imie) as ip FROM pracownicy';
-                echo("<h1>Ćw 7</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -144,7 +137,6 @@ require_once("../connect.php");
                 echo("</table>");
 
                 $sql='SELECT count(imie) as ip FROM pracownicy where (imie like "%a") AND (dzial=1 OR dzial=3)';
-                echo("<h1>Ćw 8</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -158,7 +150,6 @@ require_once("../connect.php");
                 echo("</table>");
 
                 $sql='SELECT nazwa_dzial, sum(zarobki) as sz FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-                echo("<h1>Ćw 9</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -173,7 +164,6 @@ require_once("../connect.php");
                 echo("</table>");    
 
                 $sql='SELECT count(imie) as ip, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-                echo("<h1>Ćw 10</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -188,7 +178,6 @@ require_once("../connect.php");
                 echo("</table>");    
 
                 $sql='SELECT avg(zarobki) as az, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-                echo("<h1>Ćw 11</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -203,7 +192,6 @@ require_once("../connect.php");
                 echo("</table>");    
 
                 $sql='SELECT sum(zarobki) as sum, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
-                echo("<h1>Ćw 12</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -218,7 +206,6 @@ require_once("../connect.php");
                 echo("</table>");   
 
                 $sql='SELECT avg(zarobki) as az, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
-                echo("<h1>Ćw 13</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql); 
                 echo("<table border=1>");
@@ -233,7 +220,6 @@ require_once("../connect.php");
                 echo("</table>");   
 
                 $sql='SELECT sum(zarobki) as sum, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial HAVING sum(zarobki)<28';
-                echo("<h1>Ćw 14</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql);
                 echo("<table border=1>");
@@ -247,7 +233,6 @@ require_once("../connect.php");
                 echo("</table>");
 
                 $sql='SELECT avg(zarobki) as az, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie not like "%a") group by dzial having avg(zarobki)>30';
-                echo("<h1>Ćw 15</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql);
                 echo("<table border=1>");
@@ -261,7 +246,6 @@ require_once("../connect.php");
                 echo("</table>");
 
                 $sql='SELECT count(imie) as i, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=id_org) group by dzial having count(imie)>2';
-                echo("<h1>Ćw 16</h1>");
                 echo("<h2>$sql</h2>");
                 $result = $conn->query($sql);
                 echo("<table border=1>");

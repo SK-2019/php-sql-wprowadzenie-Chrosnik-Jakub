@@ -35,7 +35,6 @@
 <?php
     require_once("../connect.php");
     $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=2 AND dzial=id_org';
-    echo("<h1></h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql);
         echo("<table border=1>");
@@ -52,7 +51,6 @@
 
         echo("</table>");
     $sql='SELECT * FROM pracownicy, organizacja where dzial=id_org AND (dzial=1 or dzial=2)';
-    echo("<h1> </h1>");
     echo("<h2>$sql</h2>"); 
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -70,7 +68,6 @@
 
         echo("</table>");
     $sql='SELECT * FROM pracownicy, organizacja WHERE zarobki<30 AND dzial=id_org';
-    echo("<h1></h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql); 
         echo("<table border=1>");

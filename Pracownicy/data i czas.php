@@ -35,7 +35,6 @@
 <?php
 require_once("../connect.php");
        $sql='SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org';
-       echo("<h1>Ćw 1</h1>");
        echo("<h2>$sql</h2>");
        $result = $conn->query($sql);
            echo("<table border=1>");
@@ -54,7 +53,6 @@ require_once("../connect.php");
            echo("</table>");
 
            $sql='SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"';
-           echo("<h1>Ćw 2</h1>");
            echo("<h2>$sql</h2>");
            $result = $conn->query($sql);
                echo("<table border=1>");
@@ -74,7 +72,6 @@ require_once("../connect.php");
             echo("</table>");
 
             $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org';
-            echo("<h1>Ćw 3</h1>");
             echo("<h2>$sql</h2>");
             $result = $conn->query($sql);
                 echo("<table border>");
@@ -87,7 +84,6 @@ require_once("../connect.php");
            echo("</table>");
 
            $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="handel"';
-           echo("<h1>Ćw 4</h1>");
            echo("<h2>$sql</h2>");
            $result = $conn->query($sql);
                echo("<table border>");
@@ -100,7 +96,6 @@ require_once("../connect.php");
           echo("</table>");
 
           $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE imie like "%a"';
-          echo("<h1>Ćw 5</h1>");
           echo("<h2>$sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
@@ -114,7 +109,6 @@ require_once("../connect.php");
 
 
           $sql='SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE imie not like "%a"';
-          echo("<h1>Ćw 6</h1>");
           echo("<h2>$sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
@@ -128,7 +122,6 @@ require_once("../connect.php");
 
 
         $sql='SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as a, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-        echo("<h1>Ćw 7</h1>");
         echo("<h2>$sql</h2>");
           $result = $conn->query($sql);
               echo("<table border>");
@@ -144,7 +137,6 @@ require_once("../connect.php");
 
 
          $sql='SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-         echo("<h1>Ćw 8</h1>");
          echo("<h2>$sql</h2>");
            $result = $conn->query($sql);
                echo("<table border>");
@@ -160,7 +152,6 @@ require_once("../connect.php");
 
 
          $sql='SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial';
-         echo("<h1>Ćw 9</h1>");
          echo("<h2>$sql</h2>");
            $result = $conn->query($sql);
                echo("<table border>");

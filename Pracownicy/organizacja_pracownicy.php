@@ -36,7 +36,6 @@
 
 require_once("../connect.php");
     $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE dzial = id_org';
-    echo("<h1>Ćw 1</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql);
         echo("<table border=1>");
@@ -52,7 +51,6 @@ require_once("../connect.php");
         echo("</table>");
 
     $sql='SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial = id_org) AND (dzial=1 or dzial=4)';
-    echo("<h1>Ćw 2</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -70,7 +68,6 @@ require_once("../connect.php");
         echo("</table>");
 
     $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial = id_org) and (imie like "%a")';
-    echo("<h1>Ćw 3</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -88,7 +85,6 @@ require_once("../connect.php");
         echo("</table>");
 
     $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial = id_org) AND (imie not like "%a")';
-    echo("<h1>Ćw 4</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql);
         echo("<table border=1>");
@@ -106,7 +102,6 @@ require_once("../connect.php");
         echo("</table>");
 
     $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial = id_org) order by imie desc';
-    echo("<h1>Ćw 5</h1>");
     echo("<h2>$sql</h2>"); 
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -124,7 +119,6 @@ require_once("../connect.php");
         echo("</table>");
 
     $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=id_org) AND (dzial=3) order by imie asc';
-    echo("<h1>Ćw 6</h1>");
     echo("<h2>$sql</h2>");
     $result = $conn->query($sql); 
         echo("<table border=1>");
@@ -141,7 +135,6 @@ require_once("../connect.php");
         echo("</table>");
 
         $sql='SELECT imie, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial=id_org) AND (imie like "%a") order by imie asc';
-        echo("<h1>Ćw 7</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -158,7 +151,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja where (dzial=id_org) AND (imie like "%a") AND (dzial=1 OR dzial=3) order by zarobki asc';
-        echo("<h1>Ćw 8</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -176,7 +168,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT imie, zarobki, nazwa_dzial FROM pracownicy, organizacja WHERE (dzial = id_org) AND (imie not like "a%") order by nazwa_dzial asc, zarobki asc';
-        echo("<h1>Ćw 9</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -192,7 +183,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND dzial=4 order by zarobki desc limit 2';
-        echo("<h1>Ćw 10</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -211,7 +201,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=id_org AND (dzial=4 or dzial=2) order by zarobki desc limit 3';
-        echo("<h1>Ćw 11</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
@@ -230,7 +219,6 @@ require_once("../connect.php");
             echo("</table>");
 
         $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=id_org order by data_urodzenia asc limit 1';
-        echo("<h1>Ćw 12</h1>");
         echo("<h2>$sql</h2>");
         $result = $conn->query($sql); 
             echo("<table border=1>");
