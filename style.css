@@ -51,16 +51,17 @@ input {
 
 .link {
 text-decoration: none;
-color: #000000;
+color: #ffffff;
 padding: 1rem;
-background-color: #777777;
+background-color: rgb(26, 26, 26);
 text-align: center;
 margin: 5px 10px;
 font-size: 1.25em;
 border-radius: 7px;
 }
+
 .link:hover {
-  background-color: #505050;
+  background-color: #000000;
 }
 
 table {
