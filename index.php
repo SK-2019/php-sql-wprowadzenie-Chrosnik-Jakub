@@ -13,7 +13,6 @@
     <h1 class="title">
     Chrośnik Jakub
     </h1>
-echo("$conn = new mysqli($_SERVER['S'],$_SERVER['U'], $_SERVER['P'], $_SERVER['B']");
 </div>
 
 <div class="colorBlue">

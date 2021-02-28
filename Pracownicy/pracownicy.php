@@ -27,6 +27,10 @@
     <a href="/Biblioteka/ksiazki.php">Ksiazki</a>
 </div> 
 <?php
+echo("<li>".$_SERVER['USER']);
+echo("<li>".$_SERVER['PASS']);
+echo("<li>".$_SERVER['SERV']);
+echo("<li>".$_SERVER['DB']);
 
     require_once("../connect.php");
     $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=2 AND dzial=id_org';
