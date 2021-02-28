@@ -57,7 +57,7 @@ input {
   text-decoration: none;
   color: #ffffff;
   padding: 1rem;
-  background-color: rgba(26, 26, 26, 0.25);
+  background-color: rgba(26, 26, 26, 0.3);
   text-align: center;
   margin: 5px 10px;
   font-size: 1.25em;
@@ -75,7 +75,7 @@ table {
 }
 
 th {
-  background-color: #000000;
+  background-color: rgb(0, 0, 0, 0.3);
   color: white;
 }
 
@@ -91,10 +91,10 @@ tr:nth-child(even) {
 }
 
 tr {
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(26, 26, 26, 0.3);
   color: rgb(255, 255, 255);
 }
 
 tr:hover {
-  background-color: black;
+  background-color: rgb(0, 0, 0, 0.3);
 }
