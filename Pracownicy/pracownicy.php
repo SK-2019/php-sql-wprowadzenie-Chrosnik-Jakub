@@ -28,7 +28,7 @@
 </div> 
 <?php
 
-    require("connect.php");
+    require_once("../connect.php");
     $sql='SELECT * FROM pracownicy, organizacja WHERE dzial=2 AND dzial=id_org';
     echo("<h1>Ćw 1</h1>");
     echo("<h2>$sql</h2>");
@@ -46,7 +46,6 @@
             }
 
         echo("</table>");
-    require("connect.php");
     $sql='SELECT * FROM pracownicy, organizacja where dzial=id_org AND (dzial=1 or dzial=2)';
     echo("<h1>Ćw 2</h1>");
     echo("<h2>$sql</h2>"); 
@@ -65,7 +64,6 @@
     
 
         echo("</table>");
-    require("connect.php");
     $sql='SELECT * FROM pracownicy, organizacja WHERE zarobki<30 AND dzial=id_org';
     echo("<h1>Ćw 3</h1>");
     echo("<h2>$sql</h2>");

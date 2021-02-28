@@ -36,15 +36,7 @@ echo "<li>". $_POST['dzial'];
 echo "<li>". $_POST['zarobki'];
 echo "<li>". $_POST['data_urodzenia'];
 
-$servername = "mysql-kuba.alwaysdata.net";
-$username = "kuba_ch";
-$password = "moj@b@z@";
-$dbname = "kuba_ch";
-
-$conn = new mysqli($servername, $username, $password, $dbname);
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+require_once("../connect.php");
 
 $sql = "INSERT INTO pracownicy (id_pracownicy,imie, dzial, zarobki, data_urodzenia) 
        VALUES (null,'".$_POST['name']."', ".$_POST['dzial'].", ".$_POST['zarobki'].",'".$_POST['data_urodzenia']."')";
