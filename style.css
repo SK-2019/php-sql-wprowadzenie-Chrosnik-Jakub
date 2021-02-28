@@ -57,7 +57,7 @@ input {
   text-decoration: none;
   color: #ffffff;
   padding: 1rem;
-  background-color: rgba(26, 26, 26, 0.3);
+  background-color: rgba(26, 26, 26, 0.6);
   text-align: center;
   margin: 5px 10px;
   font-size: 1.25em;
@@ -75,7 +75,7 @@ table {
 }
 
 th {
-  background-color: rgb(0, 0, 0, 0.3);
+  background-color: rgb(0, 0, 0, 0.6);
   color: white;
 }
 
@@ -87,11 +87,11 @@ td {
 }
 
 tr:nth-child(even) {
-  background-color: rgb(26, 26, 26, 0.3);
+  background-color: rgb(26, 26, 26, 0.6);
 }
 
 tr {
-  background-color: rgb(26, 26, 26, 0.3);
+  background-color: rgb(26, 26, 26, 0.6);
   color: rgb(255, 255, 255);
 }
 
