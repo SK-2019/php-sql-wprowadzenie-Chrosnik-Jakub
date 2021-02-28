@@ -86,6 +86,6 @@ tr {
   color: rgb(255, 255, 255);
   }
 
-  tr:nth-child(even) {
-    background-color: #000000;
+tr:hover {
+  color: black
 }
