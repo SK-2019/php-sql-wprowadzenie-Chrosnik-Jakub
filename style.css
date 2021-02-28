@@ -1,6 +1,9 @@
 body {
     background-color: rgb(128, 128, 128);
     background-image: url(https://www.itl.cat/pngfile/big/84-848774_wallpaper-rose-red-black-contrast-flower-garden-roses.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
   }
   
   h1 {
