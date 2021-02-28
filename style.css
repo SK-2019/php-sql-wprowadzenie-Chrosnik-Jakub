@@ -1,5 +1,6 @@
 body {
     background-color: rgb(128, 128, 128);
+    background-image: url(https://www.itl.cat/pngfile/big/84-848774_wallpaper-rose-red-black-contrast-flower-garden-roses.jpg);
   }
   
   h1 {
@@ -53,4 +54,5 @@ background-color: #777777;
 text-align: center;
 margin: 5px 10px;
 font-size: 1.25em;
+border-radius: 7px;
 }
