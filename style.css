@@ -44,15 +44,3 @@ nav a {
   display: flex;
 
 }
-
-.link {
-  width: 90%;
-  height: 25%;
-  border-radius: 7px 7px 7px 7px;
-  background-color: #252526;
-  box-shadow: 2px 2px 2px;
-  display: flex;
-  justify-content: center;
-  color: #D9D9D9; 
-  margin-top:16px;
-  text-decoration: none;
