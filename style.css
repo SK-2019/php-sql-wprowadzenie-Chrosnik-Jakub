@@ -1,22 +1,23 @@
 body {
-    background-color: rgb(128, 128, 128);
-    background-image: url(https://www.itl.cat/pngfile/big/84-848774_wallpaper-rose-red-black-contrast-flower-garden-roses.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+  background-color: rgb(128, 128, 128);
+  background-image: url(https://www.itl.cat/pngfile/big/84-848774_wallpaper-rose-red-black-contrast-flower-garden-roses.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-  
+
 h1 {
-    color: rgb(255, 255, 255);
-    margin-left: 20px;
-    text-shadow: 0px 5px 5px rgba(167, 167, 167, 0.5);
-  }
+  color: rgb(255, 255, 255);
+  margin-left: 20px;
+  text-shadow: 0px 5px 5px rgba(167, 167, 167, 0.5);
+}
 
 h2 {
   color: rgb(255, 255, 255);
   margin-left: 20px;
   text-shadow: 0px 5px 5px rgba(167, 167, 167, 0.5);
 }
+
 input {
   margin-left: 20px;
   margin-bottom: 20px;
@@ -26,10 +27,11 @@ input {
   background-color: rgb(26, 26, 26);
   color: rgb(255, 255, 255);
 }
+
 .container {
   display: flex;
   flex-wrap: wrap;
- 
+
 }
 
 .colorRed {
@@ -52,15 +54,15 @@ input {
 }
 
 .link {
-text-decoration: none;
-color: #ffffff;
-padding: 1rem;
-background-color: rgb(26, 26, 26);
-text-align: center;
-margin: 5px 10px;
-font-size: 1.25em;
-border-radius: 7px;
-border: 1px solid rgb(128, 15, 15);
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  background-color: rgb(26, 26, 26);
+  text-align: center;
+  margin: 5px 10px;
+  font-size: 1.25em;
+  border-radius: 7px;
+  border: 1px solid rgb(128, 15, 15);
 }
 
 .link:hover {
@@ -77,18 +79,21 @@ th {
   color: white;
 }
 
-th, td {
+th,
+td {
   padding: 15px;
   text-align: left;
   border: 1px solid rgb(128, 15, 15);
 }
 
-tr:nth-child(even) {background-color: #242424;}
+tr:nth-child(even) {
+  background-color: #242424;
+}
 
 tr {
   background-color: rgb(26, 26, 26);
   color: rgb(255, 255, 255);
-  }
+}
 
 tr:hover {
   background-color: black;
